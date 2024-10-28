@@ -3,19 +3,26 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,
-initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords"
+        content="currículum, computacion, informática, habilidades en programación, desarrollo web, bases de datos, proyectos de programación, tecnología, habilidades técnicas">
+    <meta name="description" content="Soy estudiante de Ingenieria en computacion. ">
+    <meta name="author" content="Tu Nombre o Autor Aquí">
+    <link rel="stylesheet" href="stylesheets\style.css">
     <title>Mi Currículum Vitae</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <img src="https://placehold.co/600x400" alt="Placeholder Image" />
+        <div class="border-container">
+            <div class="octagonal-border">
+                <img src="resources\FOTO PERFIL.jpeg" alt="Foto curriculum" class="octagonal-image">
+            </div>
+        </div>
         <h1>Leidy Barzola</h1>
-        <p>Tu Cargo | Tu Email | Tu Teléfono</p>
     </header>
-    <nav>
+
+    <nav class="">
         <ul>
             <li><a href="#resumen">Resumen</a></li>
             <li><a href="#experiencia">Experiencia</a></li>
@@ -24,33 +31,102 @@ initial-scale=1.0">
             <li><a href="#proyectos">Proyectos</a></li>
         </ul>
     </nav>
+
     <main>
-        <section id="resumen">
-            <h2>Resumen</h2>
-            <p>Breve descripción de tus habilidades y experiencia.</p>
-        <iframe width="600" height="400" src="https://www.youtube.com/embed/VIDEO_ID" title="Video de YouTube" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <section id="acercademi">
+            <h2>Acerca de mi</h2>
+            <p>Estudiante universitaria de la carrera de computación enfocada en la programación en
+                lenguajes como Python, Java, C.
+            </p>
         </section>
         <section id="experiencia">
             <h2>Experiencia</h2>
+
         </section>
         <section id="educacion">
             <h2>Educación</h2>
+            <h3>Bachiller tecnico en Informatica </h3>
+            <p>Unidad Educativa Fiscal Guayaquil</p>
+            <p>2016-2022</p>
+
+            <h3>Ingenería en Computación</h3>
+            <p>Escuela Superior Politecnica del Litoral </p>
+            <p>2022-Actualidad </p>
+            <iframe width="600" height="400" src="https://www.youtube.com/embed/EKekK1MATUU?si=ZtW4yu16SBj6D_0C"
+                title="Video de YouTube" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <iframe width="600" height="400"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255153.45796426694!2d-80.21918073091379!3d-2.238828510741163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses!2sec!4v1730074237704!5m2!1ses!2sec"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"> </iframe>
         </section>
+
         <section id="habilidades">
             <h2>Habilidades</h2>
+            <ul>
+                <li>Analitica</li>
+                <li>Pensamiento crítico</li>
+                <li>Capacidad resolutiva</li>
+                <li>organización</li>
+                <li>Comunicación asertiva</li>
+            </ul>
         </section>
+
         <section id="proyectos">
             <h2>Proyectos</h2>
+            <h3>Primer lugar en concurso Datathon - ESPOL </h3>
+            <h4>Problemas por resolver: Desarrollo de modelos
+                predictivos para diagnósticos rápidos de cáncer
+                metastásico </h4>
+            <h5>Temas revisados en el evento:</h5>
+            <ul>
+                <li>Fundamentos de la Ciencia de Datos</li>
+                <li>Manipulación y Análisis de Datos</li>
+                <li>Modelado y Entrenamiento de Modelos de Machine</li>
+                <li>Learning</li>
+            </ul>
         </section>
+
+        <section id="cursos">
+            <h2>Cursos y capacitaciones</h2>
+            <p> Excel: Curso para poder optimizar las labores y procesos que
+            desempeñan a través del uso de Excel</p>
+            <p>Inglés: Curso online de gramática y escritura</p>
+        </section>
+
         <form>
-            <label for="intereses">Intereses:</label>
-            <select id="intereses" name="intereses">
-                <option value="desarrollo">Desarrollo Web</option>
-                <option value="diseno">Diseño Gráfico</option>
-                <option value="marketing">Marketing Digital</option>
-            </select>
+            <h2>Formulario de Feedback</h2>
+            <label for="name">Nombre:</label><br>
+            <input type="text" id="name" name="name" class="input-field" required><br><br>
+
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" class="input-field" required><br><br>
+
+            <label for="comments">Comentarios:</label><br>
+            <textarea id="comments" name="comments" class="textarea-field" rows="4" required></textarea><br><br>
+
+            <label>Calificación:</label><br>
+            <div class="star-rating">
+                <input type="radio" id="star5" name="rating" value="5" required>
+                <label for="star5" class="star">★</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4" class="star">★</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3" class="star">★</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2" class="star">★</label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1" class="star">★</label>
+            </div>
+
+            // falta un select y un radiobutton 
+            // no usar br
+
+            <input type="submit" value="Enviar Feedback" class="submit-button">
+
         </form>
     </main>
+
     <footer>
         <p>© Tu Nombre - 2023</p>
         <ul>
