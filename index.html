@@ -7,7 +7,7 @@
     <meta name="keywords"
         content="currículum, computacion, informática, habilidades en programación, desarrollo web, bases de datos, proyectos de programación, tecnología, habilidades técnicas">
     <meta name="description" content="Soy estudiante de Ingenieria en computacion. ">
-    <meta name="author" content="Tu Nombre o Autor Aquí">
+    <meta name="author" content="Leidy Barzola">
     <link rel="stylesheet" href="stylesheets\style.css">
     <title>Mi Currículum Vitae</title>
 </head>
@@ -90,48 +90,69 @@
         <section id="cursos">
             <h2>Cursos y capacitaciones</h2>
             <p> Excel: Curso para poder optimizar las labores y procesos que
-            desempeñan a través del uso de Excel</p>
+                desempeñan a través del uso de Excel</p>
             <p>Inglés: Curso online de gramática y escritura</p>
         </section>
 
-        <form>
-            <h2>Formulario de Feedback</h2>
-            <label for="name">Nombre:</label><br>
-            <input type="text" id="name" name="name" class="input-field" required><br><br>
+        <section>
+            <form>
+                <h2>Formulario de Feedback</h2>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" class="input-field" required>
 
-            <label for="email">Correo Electrónico:</label><br>
-            <input type="email" id="email" name="email" class="input-field" required><br><br>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" class="input-field" required>
 
-            <label for="comments">Comentarios:</label><br>
-            <textarea id="comments" name="comments" class="textarea-field" rows="4" required></textarea><br><br>
+                <label for="topic">Tema de interés:</label>
+                <select id="topic" name="topic" class="input-field" required>
+                    <option value="" disabled selected>Seleccione un tema</option>
+                    <option value="experiencia">Experiencia</option>
+                    <option value="educacion">Educación</option>
+                    <option value="habilidades">Habilidades</option>
+                    <option value="proyectos">Proyectos</option>
+                    <option value="cursos">Cursos y capacitaciones</option>
+                </select>
 
-            <label>Calificación:</label><br>
-            <div class="star-rating">
-                <input type="radio" id="star5" name="rating" value="5" required>
-                <label for="star5" class="star">★</label>
-                <input type="radio" id="star4" name="rating" value="4">
-                <label for="star4" class="star">★</label>
-                <input type="radio" id="star3" name="rating" value="3">
-                <label for="star3" class="star">★</label>
-                <input type="radio" id="star2" name="rating" value="2">
-                <label for="star2" class="star">★</label>
-                <input type="radio" id="star1" name="rating" value="1">
-                <label for="star1" class="star">★</label>
-            </div>
+                <label for="comments">Comentarios:</label>
+                <textarea id="comments" name="comments" class="textarea-field" rows="4" required></textarea>
 
-            // falta un select y un radiobutton 
-            // no usar br
+                <label>Tipo de Feedback:</label>
+                <div>
+                    <input type="radio" id="general" name="feedback_type" value="general" required>
+                    <label for="general">General</label>
 
-            <input type="submit" value="Enviar Feedback" class="submit-button">
+                    <input type="radio" id="suggestion" name="feedback_type" value="suggestion">
+                    <label for="suggestion">Sugerencia</label>
 
-        </form>
+                    <input type="radio" id="praise" name="feedback_type" value="praise">
+                    <label for="praise">Felicitación</label>
+                </div>
+
+                <label>Calificación:</label>
+                <div class="star-rating">
+                    <input type="radio" id="star5" name="rating" value="5" required>
+                    <label for="star5" class="star">★</label>
+                    <input type="radio" id="star4" name="rating" value="4">
+                    <label for="star4" class="star">★</label>
+                    <input type="radio" id="star3" name="rating" value="3">
+                    <label for="star3" class="star">★</label>
+                    <input type="radio" id="star2" name="rating" value="2">
+                    <label for="star2" class="star">★</label>
+                    <input type="radio" id="star1" name="rating" value="1">
+                    <label for="star1" class="star">★</label>
+                </div>
+
+                <input type="submit" value="Enviar Feedback" class="submit-button">
+
+            </form>
+        </section>
     </main>
 
     <footer>
-        <p>© Tu Nombre - 2023</p>
+        <p>© Leidy Barzola - 2024</p>
         <ul>
-            <li><a href="https://www.linkedin.com/in/tunombre">LinkedIn</a></li>
-            <li><a href="https://github.com/tunombre">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/leidy-joselyn-barzola-rodr%C3%ADguez-29721a294/">LinkedIn</a></li>
+            <li><a href="https://github.com/ljbarzol">GitHub</a></li>
         </ul>
     </footer>
 </body>

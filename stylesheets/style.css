@@ -1,6 +1,19 @@
 *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 200;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Encabezado */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #f0f5f5;
+    padding: 20px 40px;
+    border-bottom: 2px solid #cedddd;
 }
 h1{
     color:#078080;
@@ -16,6 +29,31 @@ h1{
     text-transform: uppercase;
 }
 
+/* Navegación */
+nav {
+    background-color: #078080;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: #078080;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+nav ul li a:hover {
+    background-color: #45a049;
+}
+
+/* Contenido de la página */
 section {
     margin: 4px 2px 8px 2px; 
     border: 0.2pt solid #cedddd; 
@@ -24,14 +62,9 @@ section {
     padding-right: 1.2%; 
     border-radius: 5px;         
 }
-nav ul {
-
-    /* Modelo de diseño flexible */
-    display: flex;									
-    justify-content: space-around;
-   
+section ul {
+    margin-left: 20px;
 }
-
 
 #resumen{
     display: grid;
@@ -50,6 +83,7 @@ nav ul {
     grid-area: D;
 }
 
+/* Formulario */
 .feedback-form {
     max-width: 600px;
     margin: auto;
@@ -102,6 +136,7 @@ nav ul {
     background-color: #45a049;
 }
 
+/* Borde de foto */
 .border-container {
     display: block;
     position: relative;
